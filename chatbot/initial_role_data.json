@@ -1,0 +1,90 @@
+[
+    {
+        "model": "account.role",
+        "pk": 1,
+        "fields": {
+            "name": "Super Admin",
+            "description": "This is the top role which will is created using Command Line Interface"
+        }
+    },
+    {
+        "model": "account.role",
+        "pk": 2,
+        "fields": {
+            "name": "Admin Master",
+            "description": "This is the owner of AutoVista Chatbot"
+        }
+    },
+    {
+        "model": "account.role",
+        "pk": 3,
+        "fields": {
+            "name": "Admin",
+            "description": "Admin Master will Assign permissions"
+        }
+    },
+    {
+        "model": "account.role",
+        "pk": 4,
+        "fields": {
+            "name": "Admin1",
+            "description": "Admin Future Safe Role"
+        }
+    },
+    {
+        "model": "account.role",
+        "pk": 5,
+        "fields": {
+            "name": "Admin2",
+            "description": "Admin Future Safe Role"
+        }
+    },
+    {
+        "model": "account.role",
+        "pk": 6,
+        "fields": {
+            "name": "Admin3",
+            "description": "Admin Future Safe Role"
+        }
+    },
+    {
+        "model": "account.role",
+        "pk": 7,
+        "fields": {
+            "name": "Admin Client Master",
+            "description": "The chatbot owner who created the chatbot"
+        }
+    },
+    {
+        "model": "account.role",
+        "pk": 8,
+        "fields": {
+            "name": "Admin Client",
+            "description": "The chatbot live chat, sales, query solvings"
+        }
+    },
+    {
+        "model": "account.role",
+        "pk": 9,
+        "fields": {
+            "name": "Admin Client1",
+            "description": "Client Admin Future Safe Role"
+        }
+    },
+    {
+        "model": "account.role",
+        "pk": 10,
+        "fields": {
+            "name": "Admin Client2",
+            "description": "Client Admin Future Safe Role"
+        }
+    },
+    {
+        "model": "account.role",
+        "pk": 11,
+        "fields": {
+            "name": "Admin Client3",
+            "description": "Client Admin Future Safe Role"
+        }
+    }
+]
