@@ -132,6 +132,7 @@ class ChatboxComponentUpdate(APIView):
         try:
             query_result = Chatbox.objects.get(id=id)
             
+            
             for component_object in query_result.components:
                 if str(component_object.id) == component_id:
                     component_object.name = data.get('name',component_object.name)
@@ -139,18 +140,16 @@ class ChatboxComponentUpdate(APIView):
                     
                     component_object.response_type = data.get('response_type',component_object.response_type)
                     print("updated")
+                    component_obj = component_object
+
+                    break
 
             query_result.save()
-                    
-
-
-
-                    
-            
-            raise Http404
-
             
         except Chatbox.DoesNotExist:
             raise Http404
         
-        return Response(status=status.HTTP_204_NO_CONTENT)
+
+        serializer_output = serializers.ChatBoxComponentAddSerializer(component_obj)
+        print(serializer_output.data)
+        return Response(serializer_output.data)
